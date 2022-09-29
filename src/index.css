@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .container header .header-nav-area #nav_container  {
+    display:flex;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +26,180 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p {
+  font-size: 1.6rem;
+
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+}
+
+/* before selector */
+.app:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  max-width: 100%;
+  height: 70vh;
+  margin: 0;
+  padding: 0 1 rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+ 
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+  text-align:center;
+}
+
+.app .description {
+  position: relative;
+  right: -97%;
+  transform-origin: 0 0;
+  transform: rotate(270deg);
+
+
+}
+
+.app .bottom {
+  display:flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 2555, 0.2);
+  color:white;
+  border: 0.001px solid ;
+  
+  
+}
+
+.bold {
+  font-size: extra large;
+  font-weight: bold;
+}
+
+.app .search {
+  text-align: center;
+  padding: 2rem;
+}
+
+.app input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  border: 0.001px solid ;
+  background: rgba(255,255,255,0.2);
+  border-color:white;
+
+ 
+}
+
+::placeholder {
+  color: white;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:-5;
+}
+
+*:focus {
+  outline: none;
+}
+
+.bottom {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode:unset
+}
+
+.top {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+
+/* 
+animation created by gradually changing from one set of css styles to another */
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.animate {
+  transition: transform .35s ease-in-out;
+}
+
+.animate.grow {
+  transform: scale(1.5);
+}
+
+h1 {
+  font-size: 600%; 
+}
+
+input[type="text"]{
+  width: 1%;
+  transition: width 1s ease-in-out;
+  color:white;
+
+}
+
+input[type="text"]:focus{
+  width: 20%;
+  
+
+}
+
+/* input::placeholder {
+  color: transparent;
+} */
+
+/* input:focus:placeholder {
+  color:white;
+  
+} */
