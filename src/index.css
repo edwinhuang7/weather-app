@@ -44,7 +44,6 @@ h1 {
   color: white;
 }
 
-/* before selector */
 .app:before {
   content: '';
   position: absolute;
